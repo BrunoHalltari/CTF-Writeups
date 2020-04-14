@@ -69,6 +69,10 @@ After looking for a while inside the pcapng file i found an  interesting request
 
 I tried to make a request but all I got was a 401 error , so i realized that we have  to create a jwt token to get the authorization.
 
+For hours I kept trying to create tokens that used the username field, since in the other challenges I had found an   email "true.grit@umbccd.io" , but nothing... So I tried to log in from /staff.html by inserting in the username field "true.grit@umbccd.io" without putting any password, intercepting the request with burp.
+
+It was the right move because in the header i found this -----> " JWT 'identity'=31337; Path=/ " 
+
 
 
 
