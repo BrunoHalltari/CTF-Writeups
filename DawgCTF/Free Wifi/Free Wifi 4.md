@@ -5,7 +5,8 @@ Looking better i discovered a WifiKey nonce parameter decoded in base64 from the
 
 ![Cookie](https://user-images.githubusercontent.com/59454895/79171575-4a43d480-7dea-11ea-8c72-0d5118723279.PNG)
 
-After doing the sha1 of the nonce i noticed that the first eight characters where the same as the login token , here is an example from a previous login.
+After doing the sha1 of the nonce i noticed that the first eight characters where the same as the login token , here is an example from a previous login (i got it always from the pcapng file provided by the authors of the challenge)
+
 Nonce: WifiKey nonce=MjAyMC0wNC0wOCAxNzowMQ== . with sha1 it becomes 5004f47ae3e2e7c1c9a5ea4d1666f95e6b06b062
 Login token (of the same session) : ImE4OGVkMWY1ZDg4YWU4MmQxMzFmODg4ZmVhMWY2MDQ0ZjUxMDA4MjAi.Xo4DYg.fnXZhEmbQPzEgFWLgEfjSTeqX2Y&passcode=5004f47a
 
