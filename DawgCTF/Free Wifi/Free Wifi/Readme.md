@@ -58,3 +58,13 @@ Now we can be sure that the first 8 characters of the sha1 are used to generate 
 To complete this challenge  i made a request from my browser to /staff.html intercepting the request with burp in order to take the wifikey nonce of the session, i did the sha1 of the nonce and I put the first eight characters in the "wifiKey" text box trying to login.
 
 It went well and the web page printed the flag :  DawgCTF{k3y_b@s3d_l0g1n!}
+
+
+Free Wifi 2 :
+
+The descriptio of this challenge was " I saw someone's screen and it looked like they stayed logged in, somehow... http://freewifi.ctf.umbccd.io/ " and a pcap file was provided for donwload.
+
+After looking for a while i found an  interesting request to /jwtlogin
+![token](https://user-images.githubusercontent.com/59454895/79248691-0e555180-7e74-11ea-83c0-4340f2d79920.PNG)
+
+
