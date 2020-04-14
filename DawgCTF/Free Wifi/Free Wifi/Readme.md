@@ -19,7 +19,7 @@ This is an email value of an ipotetic user of the web site!
 Now I just put the email true.grit@umbccd.io inside the text box and I pressed "I forgot my password" Intercepting the request with burp.
 It was interesting because in the header i found the email that i used before , but  with the owner's username :D and that's really good.
 Why is it good ? 
-Because without a proper validation we can manipulate the request header modifying just the email value and leaving the username unchanged , so the website believes we are a legitimate user while an attacker( in this case me XD ) could receive the authentic link to change the password.
+Because without a proper validation we can manipulate the request header modifying just the email value and leaving the username unchanged , so the website believes we are a legitimate user while an attacker( in this case me  ) could receive the authentic link to change the password.
 
 
 
