@@ -14,7 +14,7 @@ Flag: DawgCTF{w3lc0m3_t0_d@wgs3c_!nt3rn@t!0n@l}
 
 
 
-##Free Wifi 3 :
+## Free Wifi 3 :
 
 In this challenge ,to start, i checked a POST request to /forgotpassword.html .
 After looking inside the html code of the forgot password page i found something interesting
@@ -36,7 +36,7 @@ In the end I changed the email in the request taken with burp with one of my pro
 
 
 
-##Free Wifi 4 :
+## Free Wifi 4 :
 
 On the /staff.html page as well as logging in with a username and password you could use the wifi key,so i decided to look some request on the /staff.html page from the pcapng file.
 Looking better i discovered a WifiKey nonce parameter encoded in base64 from the cookies section ( you were also notified that the hashing algorithm for wifikey was sha1)
