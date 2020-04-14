@@ -64,7 +64,7 @@ Free Wifi 2 :
 
 The descriptio of this challenge was " I saw someone's screen and it looked like they stayed logged in, somehow... http://freewifi.ctf.umbccd.io/ " and a pcap file was provided for donwload.
 
-After looking for a while i found an  interesting request to /jwtlogin
+After looking for a while inside the pcapng file i found an  interesting request to /jwtlogin
 ![token](https://user-images.githubusercontent.com/59454895/79248691-0e555180-7e74-11ea-83c0-4340f2d79920.PNG)
 
 
