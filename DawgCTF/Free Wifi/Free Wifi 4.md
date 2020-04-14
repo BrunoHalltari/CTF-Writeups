@@ -1,7 +1,7 @@
 Free Wifi 4
 
 On the /staff.html page as well as logging in with a username and password you could use the wifi key,so i decided to look some request on the /staff.html page from the pcapng file.
-Looking better i discovered a WifiKey nonce parameter decoded in base64 from the cookies section ( you were also notified that the hashing algorithm for wifikey was sha1)
+Looking better i discovered a WifiKey nonce parameter encoded in base64 from the cookies section ( you were also notified that the hashing algorithm for wifikey was sha1)
 
 ![Cookie](https://user-images.githubusercontent.com/59454895/79171575-4a43d480-7dea-11ea-8c72-0d5118723279.PNG)
 
