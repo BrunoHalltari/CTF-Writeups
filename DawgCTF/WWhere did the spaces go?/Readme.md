@@ -17,7 +17,7 @@ In the end I used a baudot decoder , but first we have to convert the string int
 
 Now that i had the binary i converted it with the baudot decoder and i got : DAWGCTFBAUD⇧0⇩T⇧1⇩SN⇧0⇩TM⇧0⇩RSE .
 
-But it was still not the correct flag , i just removed the " ⇧ ⇩ " and the flag finally was correct .
+But it was still not the correct flag , i just removed the " ⇧ ⇩ " and the flag  was correct .
 
 Flag: DAWGCTFBAUD0T1SN0TM0RSE
 
