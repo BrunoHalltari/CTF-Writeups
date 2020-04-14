@@ -19,4 +19,4 @@ Now we can be sure that the first 8 characters of the sha1 are used to generate 
 
 To complete this challenge  i made a request from my browser to /staff.html intercepting the request with burp in order to take the wifikey nonce of the session, i did the sha1 of the nonce and I put the first eight characters in the "wifiKey" text box trying to login.
 
-it went well and the web page printed the flag :  DawgCTF{k3y_b@s3d_l0g1n!}
+It went well and the web page printed the flag :  DawgCTF{k3y_b@s3d_l0g1n!}
