@@ -14,5 +14,8 @@ Login token (of the same session) : ImE4OGVkMWY1ZDg4YWU4MmQxMzFmODg4ZmVhMWY2MDQ0
 
 If you look better the passcode in the token you will notice that the passcode is the same as the first eight characters of the  nonce with the SHA1 (5004f47a).
 
-Now we can be sure that the first 8 characters of the sha1 are used to generate the passcode and use  this method to log in with the wifi key :D ! .
+Now we can be sure that the first 8 characters of the sha1 are used to generate the passcode and finally use  this method to log in with the wifi key :D ! .
 
+To complete this challenge  i made a request from my browser to /staff.html intercepting the request with burp in order to take the wifikey nonce of the session, i did the sha1 of the nonce and I put the first eight characters in the "wifiKey" text box trying to login.
+
+it went well and the web page printed the flag :  DawgCTF{k3y_b@s3d_l0g1n!}
