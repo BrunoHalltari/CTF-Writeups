@@ -6,7 +6,9 @@ The  challenge featured a pcapng file to download, after checking it for  a whil
 
 so i just tried to make a get request to freewifi.ctf.umbccd.io/staff.html and i got the flag  in the main web-page : 
 
-![Prima](https://user-images.githubusercontent.com/59454895/79245164-a7359e00-7e6f-11ea-9bf0-56f45a480e71.PNG)
+![Prima](https://user-images.githubusercontent.com/59454895/79245164-a7359e00-7e6f-11ea-9bf0-56f45a480e71.PNG)+
+
+Flag: DawgCTF{w3lc0m3_t0_d@wgs3c_!nt3rn@t!0n@l}
 
 
 
