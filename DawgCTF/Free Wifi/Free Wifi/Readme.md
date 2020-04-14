@@ -67,7 +67,7 @@ The description of this challenge was " I saw someone's screen and it looked lik
 After looking for a while inside the pcapng file i found an  interesting request to /jwtlogin
 ![token](https://user-images.githubusercontent.com/59454895/79248691-0e555180-7e74-11ea-83c0-4340f2d79920.PNG)
 
-So I tried to make a request but all I got was a 401 error , so i realized that we have  to create a jwt token to get the authorization.
+I tried to make a request but all I got was a 401 error , so i realized that we have  to create a jwt token to get the authorization.
 
 
 
