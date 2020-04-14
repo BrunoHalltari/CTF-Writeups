@@ -67,7 +67,14 @@ The description of this challenge was " I saw someone's screen and it looked lik
 After looking for a while inside the pcapng file i found an  interesting request to /jwtlogin
 ![token](https://user-images.githubusercontent.com/59454895/79248691-0e555180-7e74-11ea-83c0-4340f2d79920.PNG)
 
-I tried to make a request but all I got was a 401 error , so i realized that we have  to create a jwt token to get the authorization.
+I tried to make a request but all I got was this :
+
+{
+    "description": "Request does not contain an access token",
+    "error": "Authorization Required",
+    "status_code": 401
+}
+ So i realized that we have  to create a jwt token to get the authorization.
 
 For hours I kept trying to create tokens that used the username field, since in the other challenges I had found an   email "true.grit@umbccd.io" , but nothing... So I tried to log in from /staff.html by inserting in the username field "true.grit@umbccd.io" without putting any password, intercepting the request with burp.
 
