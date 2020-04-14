@@ -51,7 +51,7 @@ Login token (of the same session) : ImE4OGVkMWY1ZDg4YWU4MmQxMzFmODg4ZmVhMWY2MDQ0
 ![Cookie2](https://user-images.githubusercontent.com/59454895/79172677-45345480-7ded-11ea-8307-a4a65f6dbe2f.PNG)
 ![TokenCsrf](https://user-images.githubusercontent.com/59454895/79172740-6f861200-7ded-11ea-960a-eda5ee154567.PNG)
 
-If you look better the passcode in the token you will notice that the passcode is the same as the first eight characters of the  nonce with the SHA1 (5004f47a).
+If you look better the passcode in the token you will notice that it is the same as the first eight characters of the  nonce with the SHA1 (5004f47a).
 
 Now we can be sure that the first 8 characters of the sha1 are used to generate the passcode and finally use  this method to log in with the wifi key :D ! .
 
