@@ -4,10 +4,10 @@ The  challenge featured a pcapng file to download, after checking it for  a whil
 
 ![Ricgiesta](https://user-images.githubusercontent.com/59454895/79156182-54ee7180-7dca-11ea-84f4-f4599f7dfe48.PNG)
 
-so i just tried to make a get request to freewifi.ctf.umbccd.io/staff.html and i got the flag  in the main web-page :)
+so i just tried to make a get request to freewifi.ctf.umbccd.io/staff.html and i got the flag  in the main web-page :) .
 
 
-Free Wifi 3
+Free Wifi 3 :
 
 In this challenge ,to start, i checked a POST request to /forgotpassword.html .
 After looking inside the html code of the forgot password page i found something interesting
