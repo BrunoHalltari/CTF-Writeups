@@ -80,6 +80,13 @@ For hours I kept trying to create tokens that used the username field, since in 
 
 It was the right move because in the header of the error page i found this -----> " JWT 'identity'=31337; Path=/ "  and this is very useful for us because we know that the jwt token is using the identity and username field ( even if they are deprecated ).
 
+To finish this challenge i just went again to /jwtlogin intercepting the request with burp , then i put the token in the header like this:
+
+Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MzEzMzcsInVzZXJuYW1lIjoidHJ1ZS5ncml0QHVtYmNjZC5pbyIsImlhdCI6IjE1ODY2OTg2NDYiLCJleHAiOiIxNTg2Njk5NTE3IiwibmJmIjoiMTU4NjY5ODUxNyJ9._eJaJQszRDarG_lY_xu7Yt7nTksNzFiEBE1-N6B5eXY
+
+After i sent the modified request with the jwt token i got the flag :
+
+
 
 
 
