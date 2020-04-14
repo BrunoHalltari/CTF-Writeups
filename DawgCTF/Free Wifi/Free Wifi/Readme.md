@@ -13,6 +13,7 @@ Flag: DawgCTF{w3lc0m3_t0_d@wgs3c_!nt3rn@t!0n@l}
 
 
 
+
 Free Wifi 3 :
 
 In this challenge ,to start, i checked a POST request to /forgotpassword.html .
