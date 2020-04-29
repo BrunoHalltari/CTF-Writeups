@@ -17,4 +17,4 @@ Now i reached the /treasuremap.xml and got this xml fields:
   
   ![Bella4](https://user-images.githubusercontent.com/59454895/80574156-3955ae80-89f9-11ea-8222-2383fae2812a.PNG)
   
- 
+ Flag: flag{tr3asur3_hunt1ng_fUn}
