@@ -1,9 +1,8 @@
 ## JSCLEAN :
 
 The description of this challenge was :   
-"JavaScript Cleaning Service: Transform ugly JavaScript files to pretty clean JavaScript files!" 
-
-There was also a python file provided for the download with this code :
+"JavaScript Cleaning Service: Transform ugly JavaScript files to pretty clean JavaScript files!".
+In the description there was also a python file to download with this code:
 
 ```python
 import os
