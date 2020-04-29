@@ -32,8 +32,7 @@ main(sys.argv)
 
 ```
 
-The first thing I tried was to call the file with a random name and insert some javascript code to see what I would get.
-All i got was a beautifier :
+The first thing I tried was to send a random name and some Javascript to see what would have happened. All I got was my Javascript code beautified :
 
 ![test](https://user-images.githubusercontent.com/59454895/80551634-09d48100-89bc-11ea-8e5e-8690c86ff36f.PNG)
 
