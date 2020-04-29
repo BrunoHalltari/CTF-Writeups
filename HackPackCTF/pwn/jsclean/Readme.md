@@ -2,6 +2,7 @@
 
 The description of this challenge was :   
 "JavaScript Cleaning Service: Transform ugly JavaScript files to pretty clean JavaScript files!" 
+
 There was also a python file provided for the download with this code :
 
 ```python
