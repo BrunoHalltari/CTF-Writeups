@@ -45,6 +45,6 @@ Now we have just to extract the flag , i did it injecting this code :
 The flag is served :
 ![Capture](https://user-images.githubusercontent.com/59454895/80552374-5ae57480-89be-11ea-9f4d-7d087fb70550.PNG)
 
-Flag:flag{Js_N3v3R_FuN_2_Re4d}
+Flag: flag{Js_N3v3R_FuN_2_Re4d}
 
 
