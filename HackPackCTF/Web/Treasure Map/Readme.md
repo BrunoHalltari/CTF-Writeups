@@ -1,4 +1,4 @@
-Treasure Map :
+## Treasure Map :
 
 The description of the challenge was :
 "Treasure of the Pirates! It should in some of this (or hidden) island!" And the home of the site was presented like this:
