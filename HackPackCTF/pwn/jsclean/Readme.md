@@ -41,7 +41,7 @@ Looking in the python code i discovered that with the subprocess.run() is execut
 
 ![Esorcista](https://user-images.githubusercontent.com/59454895/80551972-22916680-89bd-11ea-9fc4-7ae28fd5e679.PNG)
 
-Now we have just to extract the flag , i did it injecting this code :
+Now we have just to extract the flag , i did it by injecting this code :
 " const fs = require('fs');const a = fs.readFileSync('flag.txt', 'utf8');console.log(a) "
 
 The flag is served :
