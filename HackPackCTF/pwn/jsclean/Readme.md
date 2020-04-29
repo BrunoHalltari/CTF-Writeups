@@ -1,4 +1,4 @@
-JSCLEAN :
+## JSCLEAN :
 
 The description of this challenge was :   
 "JavaScript Cleaning Service: Transform ugly JavaScript files to pretty clean JavaScript files!" And a python file was provided for the donwload.
