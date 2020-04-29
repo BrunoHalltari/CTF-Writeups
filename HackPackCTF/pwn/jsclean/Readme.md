@@ -37,7 +37,7 @@ All i got was a beautifier :
 
 ![test](https://user-images.githubusercontent.com/59454895/80551634-09d48100-89bc-11ea-8e5e-8690c86ff36f.PNG)
 
-Looking in the python code i discovered that with the subprocess module he spawn a processes with a specific name , so i tried to call the file "index.js"  and put some  javascript, discovering that I had managed to inject it.
+Looking in the python code i discovered that with the subprocess.run() is executing an external command  where  an "index.js" is taken, so i tried to call the file "index.js"  and put some  javascript, discovering that I had managed to inject it.
 
 ![Esorcista](https://user-images.githubusercontent.com/59454895/80551972-22916680-89bd-11ea-9fc4-7ae28fd5e679.PNG)
 
