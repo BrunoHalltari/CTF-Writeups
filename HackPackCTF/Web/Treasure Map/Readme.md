@@ -13,7 +13,7 @@ Now i reached the /treasuremap.xml and got this xml fields:
 
 ![Bella3](https://user-images.githubusercontent.com/59454895/80573740-74a3ad80-89f8-11ea-8d74-292afeedbe11.PNG)
 
- Looking the xml we can see that in the "<loc>" field there is a .html , and if we tried to reach it adding /BmqJfhWhEa30NeVj7j2.html we    get the flag printed :
+ Looking the xml we can see that in the "loc" field there is a .html , if we tried to reach it adding /BmqJfhWhEa30NeVj7j2.html we    get the flag printed :
   
   ![Bella4](https://user-images.githubusercontent.com/59454895/80574156-3955ae80-89f9-11ea-8222-2383fae2812a.PNG)
   
