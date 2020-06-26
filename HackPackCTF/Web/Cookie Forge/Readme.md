@@ -25,3 +25,5 @@ To finish this challenge  i encoded my own session with flagship set to True
 After sending the request with my session i went to Flagship Loyalty and the flag was served :
 
 ![bella4](https://user-images.githubusercontent.com/59454895/85866326-82429d00-b7c7-11ea-8aef-d028385476e7.PNG)
+
+Flag: flag{0hmy@ch1ng_p@ncre@5th33$3@r3_d3l1c10$0}
