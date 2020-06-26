@@ -137,7 +137,7 @@ I Tried to click on the button but i got an error message because i wasn't a mem
 ![Capture888888](https://user-images.githubusercontent.com/59454895/85879097-0dc52980-b7da-11ea-8a84-f5bf5b54fbd5.PNG)
 
 
-Now I knew we had to change the member value , looking the code i saw that the token was crypted with aes-192-cbc and encoded in base64, so my first tought was to make a token with member : 1 , encrypting it and  encoding the result in base64 to inject the token into the http header but  i couldn't do it because i didn't had the key.
+Now I knew i had to change the member value , looking the code i saw that the token was crypted with aes-192-cbc and encoded in base64, so my first tought was to make a token with member : 1 , encrypting it and  encoding the result in base64 to inject the token into the http header but  i couldn't do it because i didn't had the key.
 
 Watching the code again and again  realized that the token was made in this way :
 ```javascript  
