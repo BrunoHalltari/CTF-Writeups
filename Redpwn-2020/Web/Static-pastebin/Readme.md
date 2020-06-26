@@ -4,7 +4,8 @@ The description of this challenge was : " I wanted to make a website to store bi
 
 The home page of the web site was presented like this:
 
-![Capture](https://user-images.githubusercontent.com/59454895/85898245-3bbb6580-b7fc-11ea-82ad-d7e070a26277.PNG)
+![CaptureVero](https://user-images.githubusercontent.com/59454895/85900597-63acc800-b800-11ea-81fa-4d3b209847fa.PNG)
+
 
 First of all i tried to put <script>alert(1);</script> to see if the site would print the number one but it didn't work and i got this :
 
