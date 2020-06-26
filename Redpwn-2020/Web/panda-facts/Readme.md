@@ -132,7 +132,7 @@ After the login i got a page like this :
 
 ![Home](https://user-images.githubusercontent.com/59454895/85878713-72cc4f80-b7d9-11ea-9a45-15a1d9a41b40.PNG)
 
-I Tryed to click on the button but i got an error message because i wasn't a member , after looking a while i realized there was a route to api/validate , so i just went to https://panda-facts.2020.redpwnc.tf/api/validate in order to see how the token was generated :
+I Tried to click on the button but i got an error message because i wasn't a member , after looking a while i realized there was a route to api/validate , so i just went to https://panda-facts.2020.redpwnc.tf/api/validate in order to see how the token was generated :
 
 ![Capture888888](https://user-images.githubusercontent.com/59454895/85879097-0dc52980-b7da-11ea-8a84-f5bf5b54fbd5.PNG)
 
