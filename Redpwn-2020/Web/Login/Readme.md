@@ -69,7 +69,7 @@ db.prepare(`INSERT INTO
     users (username, password)
     VALUES ('${process.env.USERNAME}', '${process.env.PASSWORD}');`).run();
 ```
-When i had a first look at the code i understood that there was a call to api/flag  with the credentials when we try to login , without any  kind of sanitization , so i tried to insert "admin' or 1=1 --  "  in the username field so i could have a query like this : ``` SELECT * FROM users 
+When i had a first look at the code i understood that there was a call to api/flag  with the credentials when we try to login , without any  kind of sanitization , so i tried to insert "admin' or 1=1 --  "  in the username field in order to have a query like this : ``` SELECT * FROM users 
             WHERE username = 'admin' or 1=1 -- '
             AND password = '${password}'; ```
 
