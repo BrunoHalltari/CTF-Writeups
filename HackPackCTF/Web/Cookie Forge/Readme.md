@@ -7,7 +7,7 @@ I wonder if they will sell you a Flask of milk to go with your cookies... "
 
 ![bella 5](https://user-images.githubusercontent.com/59454895/85864768-3db60200-b7c5-11ea-952d-4d1f70872df4.PNG)
 
-First of all i tryed to go on " Flagship Loyalty " but all i got was this : 
+First of all i tried to go on " Flagship Loyalty " but all i got was this : 
 
 ![Noflag](https://user-images.githubusercontent.com/59454895/85865093-aac99780-b7c5-11ea-82b9-5bcfb1a9da42.PNG)
 
