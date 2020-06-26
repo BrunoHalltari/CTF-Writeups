@@ -71,7 +71,11 @@ db.prepare(`INSERT INTO
 ```
 When i had a first look at the code i understood that there was a call to api/flag  with the credentials when we try to login , without any  kind of sanitization . I tried to insert "admin' or 1=1 --  "  in the username field in order to have a query like this : ``` SELECT * FROM users 
             WHERE username = 'admin' or 1=1 -- '
-            AND password = '${password}'; ``` and getting validate as the admin without the password because it will be considered as a comment 
+            AND password = '${password}'; ``` and getting validate as the admin without the password because it will be considered as a comment.
+            
+            
+            
+            
 
 
 ![Capture](https://user-images.githubusercontent.com/59454895/85872271-cc2f8100-b7cf-11ea-9ec7-dd6dc83aa37d.PNG)
