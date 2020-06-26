@@ -4,7 +4,7 @@ The description of this challenge was " I just found a hate group targeting my f
 
 ![Capture](https://user-images.githubusercontent.com/59454895/85876753-79a59300-b7d6-11ea-9bba-550b1ea16fd0.PNG)
 
-## Also an index.js was provided for the donwload :
+## Also an index.js was provided for the download :
 
 ```javascript
 global.__rootdir = __dirname;
