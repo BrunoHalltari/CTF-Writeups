@@ -4,7 +4,7 @@ The description of this challenge was : " I made a cool login page. I bet you ca
 
 ![Capture22](https://user-images.githubusercontent.com/59454895/85869348-d8b1da80-b7cb-11ea-9df9-d9bd98fb9e41.PNG)
 
-## Also an index.js was provided for the donwload :
+## Also an index.js was provided for the download :
 
 ```javascript
 global.__rootdir = __dirname;
