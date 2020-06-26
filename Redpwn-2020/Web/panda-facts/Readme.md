@@ -128,7 +128,7 @@ async function decodeToken(encrypted) {
 
 
 ```
-After the login we get a page like this :
+After the login i got a page like this :
 
 ![Home](https://user-images.githubusercontent.com/59454895/85878713-72cc4f80-b7d9-11ea-9a45-15a1d9a41b40.PNG)
 
@@ -136,7 +136,8 @@ I Tryed to click on the button but i got an error message because i wasn't a mem
 
 ![Capture888888](https://user-images.githubusercontent.com/59454895/85879097-0dc52980-b7da-11ea-8a84-f5bf5b54fbd5.PNG)
 
-So i realized we had to change the member value , looking the code i saw that the token was crypted with aes-192-cbc and encoded in base64, so my first tought was to make a token with member : 1 , encrypting it and  encoding the result in base64 to inject the token in the http header but  i couldn't do it because we didn't had the key.
+
+Now I knew we had to change the member value , looking the code i saw that the token was crypted with aes-192-cbc and encoded in base64, so my first tought was to make a token with member : 1 , encrypting it and  encoding the result in base64 to inject the token into the http header but  i couldn't do it because we didn't had the key.
 
 Watching the code again and again  realized that the token was made in this way :
 ```javascript  
