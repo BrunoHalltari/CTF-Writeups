@@ -75,3 +75,5 @@ When i had a first look at the code i understood that there was a call to api/fl
 
 
 ![Capture](https://user-images.githubusercontent.com/59454895/85872271-cc2f8100-b7cf-11ea-9ec7-dd6dc83aa37d.PNG)
+
+Flag: flag{0bl1g4t0ry_5ql1}
