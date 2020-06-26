@@ -11,7 +11,7 @@ First of all i tryed to go on " Flagship Loyalty " but all i got was this :
 
 ![Noflag](https://user-images.githubusercontent.com/59454895/85865093-aac99780-b7c5-11ea-82b9-5bcfb1a9da42.PNG)
 
-Using burp i managed to intercept a cookie field , also there was a hint about flask in the descriptionand and  a huge cookie on the main page , so i realized they were using flask to generate the token . I used flask-unsign to read the cookie , launching this comand :
+Using burp i managed to intercept a cookie field , also there was a hint about flask in the description and and  a huge cookie on the main page , so i realized they were using flask to generate the token . I used flask-unsign to read the cookie , launching this comand :
 " flask-unsign -d -c eyJmbGFnc2hpcCI6ZmFsc2UsInVzZXJuYW1lIjoidGVzdCJ9.Xpn4fg.FHIOgRaiS8-WKoGU1vX5_b9h5q4 " and it gave me {'flagship': False, 'username': 'test'}.
 
 I knew we had to change the flagship value  but every cookie as a session password , i just bruteforced the password using flask-unsign ( it was " password1" ) and made a cookie where i had this values {'flagship': False, 'username': 'test'} .
