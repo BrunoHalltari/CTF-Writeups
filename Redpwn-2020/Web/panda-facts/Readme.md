@@ -147,7 +147,7 @@ Here we can do a JSON injection because the username is not validated , so i jus
 
 {"integrity":"12370cc0f387730fb3f273e4d46a94e5","member":0,"username":"prova","member":1,"username":"prova"}
 
-After login overloading the JSON syntax i pressed the button and got the flag :
+After entering overloading the JSON syntax i pressed the button and got the flag :
 
 ![dd](https://user-images.githubusercontent.com/59454895/85880771-e0c64600-b7dc-11ea-85be-31ed5ec0c1a9.PNG)
 
