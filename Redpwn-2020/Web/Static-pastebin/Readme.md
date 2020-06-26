@@ -65,7 +65,7 @@ function clean(input) {
 }
 
 ```
-Reading this code i understood two important things , first of all the value from URL is decoded from base64 using the atob function ( It will be useful when i will report the link with the payload) and our input is sanitized with the clean function , looking inside this function i could see that the writing of text was not allowed if the bracket pairs do not match . I broke this function just adding a > to my payload :
+Reading this code i understood two important things , first of all the value from URL is decoded from base64 using the atob function ( It will be useful when i will report the link with the payload) and our input is sanitized with the clean function , looking inside this function i could see that the writing of text was not allowed if the bracket pairs didn't match . I broke this function just adding a > to my payload :
 ```javascript
 test"><img src=x onerror=alert("22");>
 ```
