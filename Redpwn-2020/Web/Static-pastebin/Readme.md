@@ -6,6 +6,10 @@ The home page of the web site was presented like this:
 
 ![CaptureVero](https://user-images.githubusercontent.com/59454895/85900597-63acc800-b800-11ea-81fa-4d3b209847fa.PNG)
 
+There was also a report site to the admin:
+
+![OOOOOO](https://user-images.githubusercontent.com/59454895/85901979-344b8a80-b803-11ea-9027-8e13f90dacdc.PNG)
+
 
 First of all i tried to put <script>alert(1);</script> to see if the site would print the number one but it didn't work and i got this :
 
@@ -61,3 +65,4 @@ function clean(input) {
 }
 
 ```
+Reading this code i understood two important things , first of all the value from URL is decoded from base64 using the atob function ( It will be useful when i will report the link with the payload) and our input is sanitized with the clean function , looking inside this function i could see that the writing of text was not allowed if the bracket pairs do not match . It 
