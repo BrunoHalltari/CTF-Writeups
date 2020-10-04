@@ -84,7 +84,7 @@ app.listen(3000, () => {
 The qs package is used by express to parse the request params. This package can also accept arrays from the request params if they are passed as follows:
 
 https://mysite.tld/route?param[]=1&param[]=2
-This treats param as an array [1,2]. We can use this property to exploit this websie.
+This treats param as an array [1,2]. We can use this property to exploit this website.
 
 Upon analysis, we see that the page is the accepted from the query, hence passing something like ../index.js will give us the source code which has the flag. But here's the catch. There are 2 functions which prevent anything of this sort. First, the strip function removes characters from the start of the string until it matches the regex /^[a-z0-9]$/im. However, if the start of the string matches this regex, it will not check any further. This prevents us from having absolute paths like /etc/passwd or paths starting with ../ in the page param.
 
