@@ -49,4 +49,4 @@ After i went to my ngnix and intercepted the traffic with  tcpflow , more specif
 
 ![xmas1](https://user-images.githubusercontent.com/59454895/103447731-6ac10100-4c8f-11eb-9363-1ebdd340e3ae.PNG)
 
-Flag:X-MAS{s0_fL4g_M4ny_IFS_bb69cd55f5f6}
+Flag: X-MAS{s0_fL4g_M4ny_IFS_bb69cd55f5f6}
