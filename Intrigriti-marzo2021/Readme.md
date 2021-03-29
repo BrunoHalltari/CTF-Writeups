@@ -7,7 +7,7 @@
 
 The challenge website had an input field to enter notes where we could write what we want.
 First of all i tried to fuzz in order to see how the challenge would react , the first thing i noticed was a csrf token and our notes in the post request,
-i also noticed that if we send a special character to escape the html tag with any strange element it will be sanitize by the server , after a while i
+i also noticed that if we send a special character to escape the html tag with any strange element it will be sanitize by the server . After a while i
 found out that the notes went through htmlspecialchars() function, which should help to prevent xss on this field because it can convert elements like < or > into  HTML entities.
 
 Fortunately during my test i also tried to put an email in the note field wich helped me to find a hidden feature.
@@ -16,7 +16,8 @@ Fortunately during my test i also tried to put an email in the note field wich h
 
 I tought it was interesting bacuse maybe we could escape since the email address appears inside the href attribute of the HTML tag.
 After i decided to read how "mailto" works from the rfc , and i found out there is a strange way to declare the email:
-``` "\\\"it's\ ugly\\\""@example.org; ```
+``` "\\\"it's\ ugly\\\""@example.org; ``` .
+
  It was a very good find , because it could allow to inject javascript between ``` "\\\"it's\ ugly\\\" ```  and ``` "@example.org; ```
   
 the final payload was :
