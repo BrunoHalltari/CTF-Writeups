@@ -26,7 +26,7 @@ The following payload breaks out of the attribute and adds an onmouseover event.
 
 
 ## CSRF Bypass
-The challenge has  CSRF protection built in. The page generates a special token and stores it in a hidden form input. When the form is submitted, the server checks this token matches in order to ensure the form hasn’t been submitted by a malicious site.
+The challenge has  CSRF token(in this case hashed with MD5) built in. The page generates a token and stores it in a hidden form input. When the form is submitted, the server checks this token matches in order to ensure the form hasn’t been submitted by a malicious site.
 
 ![Capture5](https://user-images.githubusercontent.com/59454895/112811499-6e8cd580-907c-11eb-870b-0ae43f669c4d.PNG)
 
