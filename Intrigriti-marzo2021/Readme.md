@@ -7,9 +7,9 @@
 
 The challenge website had an input field to enter notes where we could write what we want.
 First of all i tried to fuzz in order to see how the challenge would react , the first thing i noticed it was a csrf token and our notes in the post request,
-i also noticed that the backend checks the submitted note. If we send a special character to escape the HTML element, such as <  , the server would sanitize with the  htmlspecialchars() PHP function, which should prevent XSS attempts on this field.
+i also noticed that the backend checks the submitted note. If we send a special character to escape the any strange element, such as <  , the server would sanitize with the  htmlspecialchars() PHP function, which should prevent XSS attempts on this field.
 
-Fortunately during my test i also tried to put an email in the note field wich helped me to find hidden feature.
+Fortunately during my test i also tried to put an email in the note field wich helped me to find a hidden feature.
 
 ![Capture3](https://user-images.githubusercontent.com/59454895/112806481-18696380-9077-11eb-95b0-8221d5b8cc54.PNG)
 
