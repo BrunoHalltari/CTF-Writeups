@@ -26,7 +26,7 @@ The following payload breaks out of the attribute and adds an onmouseover event.
 
 
 ## CSRF Bypass
-The challenge has  CSRF token(in this case hashed with MD5) built in. The page generates a token and stores it in a hidden form input. When the form is submitted, the server checks this token matches in order to ensure the form hasn’t been submitted by a malicious site. 
+The challenge had CSRF token(in this case hashed with MD5) built in. The page generates a token and stores it in a hidden form input. When the form is submitted, the server checks this token matches in order to ensure the form hasn’t been submitted by a malicious site. 
 
 But that's not all , there was also a comment with a timestamp and it helped me a lot , because after a research i understood it's a typical mistake to take the current UNIX timestamp, hash it and use it as a CSRF token because is easy to predict
 
