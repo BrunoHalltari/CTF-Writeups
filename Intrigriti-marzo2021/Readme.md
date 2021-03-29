@@ -1,7 +1,9 @@
 
-Intigriti — XSS Challenge 
+## Intigriti — XSS Challenge 
 
 ![Capture](https://user-images.githubusercontent.com/59454895/112804703-fff84980-9074-11eb-972e-85a85c837655.PNG)
+
+## Let's start
 
 The challenge website had an input field to enter notes where we could write what we want.
 First of all i tried to fuzz in order to see how the challenge would react , the first thing i noticed it was a csrf token and our notes in the post request,
