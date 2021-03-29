@@ -19,7 +19,14 @@ After i decided to read how "mailto" works from the rfc , and i found out there 
  It was a very good find , because it could allow to inject javascript between ``` "\\\"it's\ ugly\\\" ```  and ``` "@example.org; ```
   
 the final payload was :
-``` "\\\"traffik\prova\\\"\ onmouseover=alert('flag{THIS_IS_THE_FLAG}');"@outlook.it . ```
+``` "\\\"traffik\prova\\\"\ onmouseover=alert('flag{THIS_IS_THE_FLAG}');"@outlook.it  ```
 
 The following payload breaks out of the attribute and adds an onmouseover event.
 ![Capture4](https://user-images.githubusercontent.com/59454895/112809118-fae9c900-9079-11eb-951b-3f9bd7a7ae00.PNG)
+
+
+## CSRF Bypass
+The challenge has  CSRF protection built in. The page generates a special token and stores it in a hidden form input. When the form is submitted, the server checks this token matches in order to ensure the form hasn’t been submitted by a malicious site.
+
+![Capture5](https://user-images.githubusercontent.com/59454895/112811499-6e8cd580-907c-11eb-870b-0ae43f669c4d.PNG)
+
