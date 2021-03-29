@@ -16,10 +16,10 @@ Fortunately during my test i also tried to put an email in the note field wich h
 I tought it was interesting bacuse maiby we could escape since the email address appears inside the href attribute of an <a> tag.
 After i decided to read how "mailto" works from the rfc , and i found out there is a strange way to declare the email:
 ``` "\\\"it's\ ugly\\\""@example.org; ```
- It was a very good find , because it could allow to inject javascript between "\\\"it's\ ugly\\\" and "@example.org;
+ It was a very good find , because it could allow to inject javascript between ``` "\\\"it's\ ugly\\\" ```  and ``` "@example.org; ```
   
 the final payload was :
-"\\\"traffik\prova\\\"\ onmouseover=alert('flag{THIS_IS_THE_FLAG}');"@outlook.it .
+``` "\\\"traffik\prova\\\"\ onmouseover=alert('flag{THIS_IS_THE_FLAG}');"@outlook.it . ```
 
 The following payload breaks out of the attribute and adds an onmouseover event.
 ![Capture4](https://user-images.githubusercontent.com/59454895/112809118-fae9c900-9079-11eb-951b-3f9bd7a7ae00.PNG)
