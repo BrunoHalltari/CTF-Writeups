@@ -33,7 +33,7 @@ But that's not all , there was also a comment with a timestamp and it helped me 
 
 ![Capture5](https://user-images.githubusercontent.com/59454895/112812171-15717180-907d-11eb-91a2-a6b0f9df6459.PNG)
 
-So in order to finish the challenge i sent my xss payload inside the notes parameter with the post request thanks to XMLHttpReques ,  to bypass the csrf token i just took the date with ``` Date.now() ``` function in js and hashandled all in md5.
+So in order to finish the challenge i made a POC where i could send my xss payload inside the notes parameter with the post request thanks to ``` XMLHttpReques ``` ,  to bypass the csrf token i just took the date with ``` Date.now() ``` function in js and hashandled all in md5.
 
 
 
