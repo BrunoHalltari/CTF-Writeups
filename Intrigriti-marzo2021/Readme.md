@@ -6,7 +6,7 @@
 ## Let's start
 
 The challenge website had an input field to enter notes where we could write what we want.
-First of all i tried to fuzz in order to see how the challenge would react , the first thing i noticed there was a csrf token and our notes in the post request,
+First of all i tried to fuzz in order to see how the challenge would react , the first thing i noticed was a csrf token and our notes in the post request,
 i also noticed that if we send a special character to escape the html tag with any strange element it will be sanitize by the server , after i also
 found out that the notes went through htmlspecialchars() function, which should prevent xss on this field.
 
