@@ -25,7 +25,7 @@ The following payload breaks out of the attribute and adds an onmouseover event.
 ![Capture6](https://user-images.githubusercontent.com/59454895/112814874-063ff300-9080-11eb-9319-a2ce218340fb.PNG)
 
 
-## CSRF Bypass
+## CSRF Token bypass
 The challenge had CSRF token(in this case hashed with MD5) built in. The page generates a token and stores it in a hidden form input.  That's a problem for our final POC because the server ensure that the form hasn’t been submitted by a malicious site thanks to this token , so we need to bypass it. 
 
 First of all i tried to generate an empty csrf token and a csrf token of the same length as the original but nothing worked.
