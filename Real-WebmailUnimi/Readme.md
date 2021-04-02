@@ -1,7 +1,7 @@
 
 ## Introduction
 
-I decided to write  a technical write-up of my first (and last) attempt to find a bug inside my university systems.
+I decided to write  a technical write-up about a bug inside the WebMail of "Università degli studi di Milano ".
 In this post I will share technical details on the xss vulnerability inside a svg file that could be chained with a csrf. 
 
 ## Xss inside svg
