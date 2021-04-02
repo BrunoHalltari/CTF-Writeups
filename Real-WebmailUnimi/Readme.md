@@ -44,7 +44,7 @@ The file had the following code :
 </svg>
 ```
 ## Attack scenario
-It's possible to trick the user into a pishing page since we can make a redirection where we want with some js  after the the file has been opened  . It can be done with the following code inside the svg file( or we can trick him to put his credentials.)
+It's possible to trick the user into a pishing page since we can make a redirection where we want with some js  , after the the file has been opened  . It can be done with the following code inside the svg file( or we can trick him to put his credentials.)
 
 
 ```xml
