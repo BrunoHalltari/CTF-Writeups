@@ -46,7 +46,7 @@ Final POC:
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
   </head>
   <body>
-    <button onclick="Esegui()">Send Payload</button>
+    <button onclick="Esegui()">Execute Payload</button>
     <script>
         function Esegui() {
           var url = "https://challenge-0321.intigriti.io/";
