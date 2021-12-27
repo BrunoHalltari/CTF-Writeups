@@ -1,6 +1,6 @@
 ![xmas](https://user-images.githubusercontent.com/59454895/147423668-176bed51-66d4-4cb1-8e38-8670dc87995c.PNG)
 ## Let's start
-The challenge comes with an input field and a parameter called " Stay open " to avoid repeating an animation, first of all I tried to insert a simple payload like <script>alert(document.domain)</script> to understand what the starting point was.
+The challenge comes with an input field and a parameter called " Stay open " to avoid repeating an animation, first of all I tried to insert a simple payload like <script>alert(document.domain)</script> to understand where the starting point was.
 
 ![xss2](https://user-images.githubusercontent.com/59454895/147423813-7a3e8cf9-6ac7-41c0-9c9c-07d6921a0cdf.png)
 From the screen I showed you above, you can see two pieces of information, first of all the content is reflected inside an html comment.
