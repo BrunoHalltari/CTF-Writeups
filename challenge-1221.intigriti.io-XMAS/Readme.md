@@ -1,6 +1,6 @@
 ![xmas](https://user-images.githubusercontent.com/59454895/147423668-176bed51-66d4-4cb1-8e38-8670dc87995c.PNG)
 ## Let's start
-The challenge comes with an input field and a parameter to avoid repeating an animation, first of all I tried to insert a simple payload like <script>alert(document.domain)</script> to understand what the starting point was.
+The challenge comes with an input field and a parameter called " Stay open " to avoid repeating an animation, first of all I tried to insert a simple payload like <script>alert(document.domain)</script> to understand what the starting point was.
 
 ![xss2](https://user-images.githubusercontent.com/59454895/147423813-7a3e8cf9-6ac7-41c0-9c9c-07d6921a0cdf.png)
 From the screen I showed you above, you can see two pieces of information, first of all the content is reflected inside an html comment.
@@ -31,6 +31,14 @@ To build the final payload I simply used Homoglyph characters regarding the ```<
 To be sure, I url encoded the whole payload.
 
 https://challenge-1221.intigriti.io/challenge/index.php?payload=--%EF%B9%A5%EF%B9%A4script%EF%B9%A5alert(document.domain)%EF%B9%A4/script%EF%B9%A5
+
+Just to be clear, clicking the link will not execute the xss, but you will need to enter ``` --﹥﹤script﹥alert(document.domain)﹤/script﹥  ``` inside the input field ( we will see after how to not make this case a self-xss )
+
+![comment2](https://user-images.githubusercontent.com/59454895/147426340-b566f6b1-d134-46f7-8e43-61a93f1d98aa.PNG)
+
+
+As you can see, I was able to get out of the Html comment, and execute my payload.
+
 
 ## Final Poc
 
