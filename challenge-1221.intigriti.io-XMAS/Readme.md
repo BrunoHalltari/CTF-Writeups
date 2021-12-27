@@ -42,7 +42,7 @@ As you can see, I was able to get out of the Html comment, and execute my payloa
 
 ## Final Poc
 
-Now that we know how to execute the xss it's not over, in fact the scenario described is that of a Self-XSS, also the payload need to be executed two times in order to populate the Referrer header, which is no good.
+Now that we know how to execute the xss it's not over, in fact the scenario described is that of a Self-XSS, which is no good.
 To avoid this problem, I wrote this simple POC:
 
 ```html
