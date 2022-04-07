@@ -102,4 +102,4 @@ To resume :
 1) Open https://so-xss.terjanq.me/iframe.php from a sandboxed iframe with ```window.open```, so in this way the newly opened window inherit the sandbox flag and his origin will become null.
 2) Open https://so-xss.terjanq.me/iframe.php and send the XSS with the stolen identifier, in this way the origin will be ```so-xss.terjanq.me.```
 
-To conclude this writeup I would like to thank Huli who helped me with the writing of the poc, I also hope someone will find this writeup useful and learn something new.
+
