@@ -1,3 +1,5 @@
+## soXSS
+
 ![2022-04-07_01-54](https://user-images.githubusercontent.com/59454895/162093274-f54f182c-1dae-4f29-98ce-a7e1792f40fd.png)
 
 ## Let's begin
@@ -93,7 +95,9 @@ This is the final poc :
   </body>
 </html> 
 ```
-To resume
+To resume :
 
 1) Open https://so-xss.terjanq.me/iframe.php from a sandboxed iframe, so in this way the newly opened window inherit the sandbox flag and his origin will become null.
-2) Open https://so-xss.terjanq.me/iframe.php and send the XSS with the stolen identifier so the origin is ```so-xss.terjanq.me.```
+2) Open https://so-xss.terjanq.me/iframe.php and send the XSS with the stolen identifier, in this way the origin will be ```so-xss.terjanq.me.```
+
+To conclude this writeup I would like to thank Huli who helped me with the writing of the poc.
