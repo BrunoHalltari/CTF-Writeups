@@ -21,16 +21,16 @@ If you look carefully the variable `desc` goes through two different regular exp
 Nested condition is when one payload is processed by two different parsers, which, with some manipulations, will make the parser return broken HTML code with our user input migrating from an HTML attribute value to an HTML attribute name.
 
 Let's make an example:
-If we use `https://www.youtube.com/embed/test.jpg` as an input, after the first replacement, it becomes:
+If we use `https://www.youtube.com/embed/test=yo.jpg` as an input, after the first replacement, it becomes:
 ```js 
-<iframe src="https://www.youtube.com/embed/test.jpg"></iframe>
+<iframe src="https://www.youtube.com/embed/test=yo.jpg"></iframe>
 ```
 The link ends with `.jpg` so after it goes through the second regex, this is the final result:
 ``` html
-<iframe src="<img src="https://www.youtube.com/embed/test.jpg">"></iframe>
+<iframe src="<img src="https://www.youtube.com/embed/test=yo.jpg">"></iframe>
 ```
 Thanks to the nested conditions, our link is first of all incorporated inside and iframe tag, and after is incorporated inside and img tag too.
-Now the double quote of the `src` attribute have been closed, now we can inject a new attribute that can specifies HTML content that will be shown in the inline frame, like `srcdoc`, in order to put some malicious HTML content.
+Now the double quote of the `src` attribute have been closed and `test=` is considered an HTML name attribute of the iframe now and not the HTML attribue value anymore. It mean that we can inject a new attribute that can specifies HTML content that will be shown in the inline frame, like `srcdoc`, in order to put some malicious HTML content.
 
 It works because even if `htmlspecialchars` will perform the encoding, the context is going to change, now our HTML malicious code is the content of the attribute, and  in the HTML context the attribute content will be decoded and our payload executed.
 ```html
