@@ -8,6 +8,7 @@ Looking at the code, it is immediately possible to identify the injection point:
 
 ### Injection Point
 in the code above ```localStorage.flag``` is passed to ```InnerHTML```, but ```localStorage``` is going to inherit from the Object.prototype. It means that if we have an client-side prototype pollution we can to control the localStorage value, here there is an example:
+
 ![2022-12-05_17-30](https://user-images.githubusercontent.com/59454895/205690366-1a23ef2c-4acd-4336-811e-019c53515d58.png)
 
 I managed to confirm the presence of prototype pollution in this way:
