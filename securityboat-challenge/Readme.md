@@ -7,7 +7,7 @@ Looking at the code, it is immediately possible to identify the injection point:
 ![2022-12-05_17-02](https://user-images.githubusercontent.com/59454895/205683886-012d1e35-0d2c-40a5-8a0e-f6b5a9acd38a.png)
 
 ### Injection Point
-in the code above ```localStorage.flag``` is passed to ```InnerHTML```, but ```localStorage``` is going to inherit from the Object.prototype. It means that if we have an client-side prototype pollution we can to control the localStorage value, here there is an example:
+in the code above ```localStorage.flag``` is passed to ```InnerHTML``` which is a common pattern that can lead to XSS if we could control the content of ```localStorage```, but ```localStorage``` is going to inherit from the Object.prototype. It means that if we have an client-side prototype pollution we can to control the localStorage value and insert a malicious content, here there is an example:
 
 ![2022-12-05_17-30](https://user-images.githubusercontent.com/59454895/205690366-1a23ef2c-4acd-4336-811e-019c53515d58.png)
 
