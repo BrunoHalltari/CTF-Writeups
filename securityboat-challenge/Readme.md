@@ -33,7 +33,7 @@ As you might now have guessed, we can use this technique to override the “docu
 
 Now that this concept is clear, we can use something like `https://ctf.securityboat.in/?title=a1&body=1&subject=a%3Cform%20name=DOMAIN%3E%3C/form%3E&__proto__[flag]=%3Cimg%20src=x%20onerror=alert()%3E`. 
 
-The first part (`<form name=DOMAIN>`) is related to the dom clobbering technique that we need to bypass the condition and reach the injection point described above, the second part of the payload is usefull to us because we can pollute `flag` with our malicious content, but the alert won't pop up because there is a CSP to bypass.
+The first part (`<form name=DOMAIN>`) is related to the dom clobbering technique that we need in order to bypass the condition and reach the injection point described above, the second part of the payload is usefull to us because we can pollute `flag` with our malicious content, but the alert won't pop up because there is a CSP to bypass.
 
 ### CSP Bypass and Conclusion
 
