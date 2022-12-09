@@ -44,7 +44,7 @@ These were the rules of the CSP inside a meta tag:
       content="default-src 'self'; style-src 'unsafe-inline' https://cdn.jsdelivr.net; font-src  https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; object-src 'none'"
  />
 ```
-Here the bypass is very simple, the directive ```'script-src'``` is accepting ```jsdeliver```, therefore, inside ```jsdeliver``` there is a well known gadget that we can abuse to bypass the csp:
+Here the bypass is very simple, the directive ```'script-src'``` is accepting ```jsdeliver```, therefore, inside ```jsdeliver``` there is a well known bypass that we can abuse to bypass the csp:
 
 ```html
  <script src="https://unpkg.com/csp-bypass@1.0.2-0/dist/sval-classic.js"></script>
